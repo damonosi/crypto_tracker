@@ -1,12 +1,67 @@
 .App {
   text-align: center;
+  display: flex;
+  width: 100%;
+  height:auto;
+  overflow: hidden;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tabel-coins{
+  display: flex;
+  position: relative;
+  width: 100%;
+ margin:10px;
+ flex-direction: column;
+ border:1px solid black
+}
+.cap-tabel{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left:10px;
+  right:10px;
+  border:1px solid black;
+  height:5em;
+  background-color: rgb(240, 248, 255);
+  z-index: 10;
+}
+.cap-tabel h1{
+  margin: 10px;
+  width:220px;
+  
+  
+}
+.container{
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  margin:5px;
+  width:220px;
 }
 
+
+.coin-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width:100%;
+  border:1px solid black;
+ 
+  
+  
+}
+
+
+.all-coins{
+ display: flex;
+ flex-direction: column;
+  margin-top:6em;
+ width: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
